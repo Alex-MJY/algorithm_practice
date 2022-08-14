@@ -10,4 +10,3 @@ class Solution:
                 sum += min(pair)
                 pair = []
         return sum
-        

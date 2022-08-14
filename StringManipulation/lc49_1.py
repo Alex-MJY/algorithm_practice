@@ -13,4 +13,7 @@ class Solution:
 
 a = Solution()
 strs = ["eat","tea","tan","ate","nat","bat"]
-print(a.groupAnagrams(strs))        
+print(a.groupAnagrams(strs)) 
+
+
+       

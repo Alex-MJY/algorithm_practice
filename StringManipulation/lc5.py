@@ -20,7 +20,3 @@ class Solution:
     
 a = Solution()
 print(a.longestPalindrome('badad'))
-                    
-            
-
-        
