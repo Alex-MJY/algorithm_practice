@@ -14,6 +14,7 @@ class LinkedList:
         self.head = None # 머리 노드
         self.current = None # 주목 노드
         
+        
     def __len__(self):
         return self.no
     
@@ -66,6 +67,7 @@ class LinkedList:
                 pre.next = None
                 self.current = pre
                 self.no -= 1
+                
                 
     def remove(self, p: Node):
         if self.head is not None:
