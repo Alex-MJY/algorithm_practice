@@ -1,5 +1,4 @@
 # 첫 번째 수를 뺀 결과 key 조회
-
 class Solution:
     def twoSum(self, nums: list, target: int) -> list:
         nums_map = dict()
