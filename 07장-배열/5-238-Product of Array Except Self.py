@@ -13,3 +13,8 @@ class Solution:
             out[i] = out[i] * p
             p = p * nums[i]
         return out
+    
+'''
+나눗셈을 하지 말고 O(n)에 풀이하라는 제약사항이 있다.
+자기 자신을 제외하고 왼쪽의 곱셈 결과와 오른쪽의 곱셈 결과를 곱해야 한다.
+'''

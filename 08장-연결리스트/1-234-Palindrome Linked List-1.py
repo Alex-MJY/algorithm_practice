@@ -23,3 +23,8 @@ class Solution:
                 return False
             
         return True
+    
+'''
+파이썬의 리스트는 q.pop(0) != q.pop() 형태로 인덱스를 지정해서 비교가 가능하기 때문에
+자료형을 변경하여 리스트만으로도 충분히 풀이할 수 있다.
+'''
