@@ -5,7 +5,7 @@
 #         self.next = next
 class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        root = prev = ListNode(None)
+        root = prev = None # ListNode(None)
         prev.next = head
         while head and head.next:
             # b가 a(head)를 가리키도록 할당
