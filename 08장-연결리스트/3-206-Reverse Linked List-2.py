@@ -1,29 +1,29 @@
 # Definition for singly-linked list.
-# class ListNode:
+# class Listcur:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
 class Solution:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        # node, prev = head, None
-        # while node:
-        #     next, node.next = node.next, prev
-        #     prev, node = node, next
-        # return prev
+    def reverseList(self, head):
+        # cur, rev = head, None
+        # while cur:
+        #     next, cur.next = cur.next, rev
+        #     rev, cur = cur, next
+        # return rev
         
-        curr = head
-        prev = None
+        cur = head
+        rev = None
         
-        while curr:
-            next = curr.next
-            curr.next = prev
-            prev = curr
-            curr = next
-        return prev
+        while cur:
+            next = cur.next
+            cur.next = rev
+            rev = cur
+            cur = next
+        return rev
         
 '''
-이전 값을 prev로 이어주면서 동시에 curr는 앞으로 나가야 되는데 node.next 값을 prev로 바꿔주기 때문에
-next 변수에 node.next 값을 고정으로 담아서 앞으로 이동할 수 있도록 한다.
+이전 값을 rev로 이어주면서 동시에 cur는 앞으로 나가야 되는데 cur.next 값을 rev로 바꿔주기 때문에
+next 변수에 cur.next 값을 고정으로 담아서 앞으로 이동할 수 있도록 한다.
 
-prev는 curr의 앞의 값을 가르킨 이후 prev에 curr를 넣어서 진전한다.
+rev는 cur의 앞의 값을 가르킨 이후 rev에 cur를 넣어서 진전한다.
 '''
