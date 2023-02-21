@@ -15,4 +15,4 @@ class Solution:
             if char in freqs:
                 count += freqs[char]
 
-        return count
+        return count  
