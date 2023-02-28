@@ -13,4 +13,4 @@ class Solution:
 
             return node
         else:
-            return root1 or root2
+            return root1 or root2 
