@@ -21,7 +21,7 @@ def bubble_sort(a):
 #         quick_sort(a, lo, pivot-1)
 #         quick_sort(a, pivot+1, hi)
 
-def quicksort1(x):
+def quick_sort1(x):
     if len(x) <= 1:
         return x
     
@@ -35,7 +35,7 @@ def quicksort1(x):
         else:
             equal.append(a)
             
-    return quicksort1(less) + equal + quicksort1(more)
+    return quick_sort1(less) + equal + quick_sort1(more)
 
 
 # cache없는 퀵소트
@@ -56,9 +56,20 @@ def partition(arr, start, end):
     arr[start], arr[right] = arr[right], arr[start]
     return right
 
-def quicksort2(arr, start, end):
+def quick_sort2(arr, start, end):
     if start < end:
         pivot = partition(arr, start, end)
-        quicksort2(arr, start, pivot-1)
-        quicksort2(arr, pivot+1, end)
+        quick_sort2(arr, start, pivot-1)
+        quick_sort2(arr, pivot+1, end)
     return arr
+
+
+def insert_sort(x):
+    for i in range(1, len(x)):
+        j = i - 1
+        key = x[i]
+        while x[j] > key and j >= 0:
+            x[j+1] = x[j]
+            j = j - 1
+        x[j+1] = key
+    return x
