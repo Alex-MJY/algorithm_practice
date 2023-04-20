@@ -7,16 +7,13 @@ n, m, k = map(int, input().split())
 data = list(map(int, input().split()))
 data.sort()
              
-result = 0
-
 first = data[-1]
 second = data[-2]
 
 count = int(m / (k + 1)) * k
-print(count)
 count += m % (k + 1)
-print(count)
 
-result += ((count) * first) + ((m - count) * second)
-
+result = 0
+result += (count) * first
+result += (m - count) * second
 print(result)
