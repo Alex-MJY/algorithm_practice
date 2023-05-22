@@ -1,11 +1,11 @@
 n = 1260
 count = 0
 
-coin = [500, 100, 50, 10]
+coin_types = [500, 100, 50, 10]
 
-for c in coin:
-    count += n // c
-    n %= c # 260, 60, 10
+for coin in coin_types:
+    count += n // coin
+    n %= coin
     
 print(count)
 

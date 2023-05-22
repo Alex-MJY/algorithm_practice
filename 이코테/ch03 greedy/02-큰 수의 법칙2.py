@@ -16,4 +16,5 @@ count += m % (k + 1)
 result = 0
 result += (count) * first
 result += (m - count) * second
+
 print(result)
