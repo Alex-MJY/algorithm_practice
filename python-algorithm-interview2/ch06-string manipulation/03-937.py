@@ -1,3 +1,5 @@
+'''로그를 재정렬하라'''
+
 # using lambda + operator
 # isdigit() : 숫자 여부 / isalpha() : 알파벳 여부 / isalnum() : 숫자 + 알파벳 여부
 class Solution:

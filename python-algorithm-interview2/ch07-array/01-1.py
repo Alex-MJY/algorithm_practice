@@ -1,3 +1,5 @@
+'''덧셈하여 타겟을 만들 수 있는 배열의 두 숫자 인덱스를 리턴하라.'''
+
 # brute force는 마지막 element까지 일일히 확인하는 방식이다. 비효율적이지만 쉽다. 시간복잡도 O(n^2)
 class Solution1:
     def twoSum(self, nums: list[int], target: int) -> list[int]:

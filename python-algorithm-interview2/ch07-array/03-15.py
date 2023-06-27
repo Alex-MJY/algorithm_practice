@@ -1,3 +1,5 @@
+'''배열을 입력받아 합으로 0을 만들 수 있는 3개의 엘리먼트를 출력하라.'''
+
 # brute force
 class Solution1:
     def threeSum(self, nums: list) -> list:
