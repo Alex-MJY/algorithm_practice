@@ -5,7 +5,7 @@
 # dfs() 함수는 자릿수가 동일할 때까지 재귀 호출을 반복하다 끝까지 탐색하면 결과를 추가하고 리턴한다.
 # 모든 경우의 수를 dfs로 탐색하고 백트래킹으로 결과를 조합하면서 리턴하게 된다.
 class Solution:
-    def letterCombinations(self, digits: str) -> List[str]:
+    def letterCombinations(self, digits: str) -> list:
         def dfs(index, path):
             # 끝까지 탐색하면 백트래킹
             if len(path) == len(digits):
