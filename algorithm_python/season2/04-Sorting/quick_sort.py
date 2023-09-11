@@ -45,4 +45,3 @@ def quick_sort2(array):
     return quick_sort2(left_side) + [pivot] + quick_sort2(right_side)
 
 print(quick_sort2(array))
-        
