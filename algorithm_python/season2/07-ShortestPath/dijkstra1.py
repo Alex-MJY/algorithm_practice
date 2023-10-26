@@ -1,6 +1,6 @@
 import sys
 input = sys.stdin.readline
-INF = int(1e9)  # 무한을 의하는 값으로 10억 설정
+INFINITY = int(1e9)  # 무한을 의하는 값으로 10억 설정
 
 # 노드의 개수, 간선의 개수 입력
 n, m = map(int, input().split()) 
@@ -11,7 +11,7 @@ graph = [[] for i in range(n + 1)]
 # 방문한 적이 있는지 체크하는 목적의 리스트 만들기
 visited = [False] * (n + 1)
 # 최단 거리 테이블을 모두 무한으로 초기화
-distance = [INF] * (n + 1)
+distance = [INFINITY] * (n + 1)
 
 # 모든 간선 정보 입력받기
 for _ in range(m):
@@ -21,7 +21,7 @@ for _ in range(m):
     
 # 방문하지 않은 노드 중에서, 가장 최단 거리가 짧은 노드의 번호 반환
 def get_smallest_node():
-    min_value = INF
+    min_value = INFINITY
     index = 0  # 최단 거리가 짧은 노드(인덱스)
     for i in range(1, n + 1):
         if distance[i] < min_value and not visited[i]:
