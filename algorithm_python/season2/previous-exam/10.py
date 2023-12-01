@@ -53,4 +53,4 @@ def solution(key, lock):
                 for i in range(m):  # 자물쇠에서 열쇠를 다시 빼기
                     for j in range(m):
                         new_lock[x + i][y + i] -= key[i][j]
-        return False
+        return False 
