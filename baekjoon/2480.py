@@ -1,7 +1,7 @@
 array = list(map(int, input().split()))
 
 if len(set(array)) == 1:
-    print((max(array) * 1000) + 10000)
+    print((max(array) * 1000) + 10000)  # 아무거나 뽑아도 됨
 
 if len(set(array)) == 2:
     array.sort()
