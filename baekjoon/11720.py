@@ -4,4 +4,4 @@ result = 0
 
 for i in nn:
     result += int(i)
-print(result)
+print(result)   
