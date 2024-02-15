@@ -1,4 +1,4 @@
-nums = [9,7,8,0,9,2,1,4,1,8]
+nums = [9, 7, 8, 0, 9, 2, 1, 4, 1, 8]
 for _ in range(3):
     nums.append(int(input()))
 
