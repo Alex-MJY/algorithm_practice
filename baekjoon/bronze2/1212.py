@@ -4,3 +4,4 @@ if __name__ == "__main__":
     binary_num = bin(decimal_num)
     print(binary_num[2:])
     
+    
