@@ -1,10 +1,5 @@
 n, u, l = map(int, input().split())
 
-# sign = 0
-# # if n >= 1000:
-# #     sign = 1
-# # else:
-# #     print("Bad")
 
 if n < 1000:
     print("Bad")
